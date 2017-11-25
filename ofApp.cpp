@@ -18,7 +18,7 @@ void ofApp::setup(){
 
 	/********************
 	********************/
-	setlocale(LC_ALL, "jpn");
+	setlocale(LC_ALL, "jpn"); // 不要.
 	font.loadFont("RictyDiminished-Regular.ttf", 30);
 	
 	/********************

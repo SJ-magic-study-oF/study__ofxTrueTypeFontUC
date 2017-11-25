@@ -7,16 +7,22 @@
 		https://github.com/hironishihara/ofxTrueTypeFontUC
 		
 description
+	ofxTrueTypeFontは、日本語を扱えない.
+	日本語を扱うためには、ofxTrueTypeFontUCを導入する.
+	
 	ofxTrueTypeFontUCは、下のように、非常に自然に表示が行える。
 		char buf[256] = "こんにちは";
 		// font.drawString("こんにちは", 100, 100);
 		font.drawString(buf, 100, 100);
 	L"xxx"でなく、charをそのまま渡せばOK.
 		
-	code上、日本語は、分岐判定などには一切使わず、
-	表示のみなので、一旦char buf[]で受け、これをstringに渡し、string(phrase)を
+	code上で、日本語を分岐判定などには一切使わず、
+	表示のみで使用する場合、
+	一旦char buf[]で受け、これをstringに渡し、string(phrase)を
 		font.drawString(phrase, 100, 100);
 	と言う感じで渡せばOK.
+	
+	ここでは、外部fileからdataを読み込み、それを表示する所まで説明.
 ************************************************************/
 #pragma once
 
